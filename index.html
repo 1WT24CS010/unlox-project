@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>🌤️ Weather App</h1>
+
+    <!-- Step 1: user pastes their free OpenWeatherMap API key here -->
+    <div class="api-key-box">
+      <label for="apiKeyInput">Your OpenWeatherMap API Key:</label>
+      <input type="text" id="apiKeyInput" placeholder="Paste API key here" />
+      <button id="saveKeyBtn">Save Key</button>
+      <p class="hint">
+        Don't have one? Get a free key at
+        <a href="https://openweathermap.org/api" target="_blank">openweathermap.org/api</a>
+      </p>
+    </div>
+
+    <!-- Step 2: search box -->
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Message shown while loading or on error -->
+    <p id="message"></p>
+
+    <!-- Weather result card (hidden until we have data) -->
+    <div class="weather-card" id="weatherCard" style="display: none;">
+      <h2 id="cityName">City Name</h2>
+      <img id="weatherIcon" src="" alt="weather icon" />
+      <p id="temperature">Temperature</p>
+      <p id="condition">Condition</p>
+      <p id="humidity">Humidity</p>
+      <p id="windSpeed">Wind Speed</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

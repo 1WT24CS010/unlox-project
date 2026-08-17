@@ -1,0 +1,144 @@
+/* Basic reset so spacing looks consistent everywhere */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #87ceeb; /* sky blue */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  color: #333333;
+}
+
+/* API key section */
+.api-key-box {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.api-key-box label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+#apiKeyInput {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+#saveKeyBtn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a90d9;
+  color: white;
+  cursor: pointer;
+}
+
+#saveKeyBtn:hover {
+  background-color: #357abd;
+}
+
+.hint {
+  font-size: 12px;
+  color: #666666;
+  margin: 8px 0 0;
+}
+
+/* Search section */
+.search-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+#cityInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#searchBtn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffb347;
+  color: #333333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#searchBtn:hover {
+  background-color: #ffa726;
+}
+
+/* Message text (loading / error) */
+#message {
+  color: #cc3300;
+  font-size: 14px;
+  min-height: 18px;
+}
+
+/* Weather result card */
+.weather-card {
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.weather-card h2 {
+  margin: 0 0 10px;
+  color: #222222;
+}
+
+.weather-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-card p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444444;
+}
+
+#temperature {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222222;
+}
+
+/* Make it look good on small phone screens too */
+@media (max-width: 420px) {
+  .container {
+    padding: 18px;
+  }
+}
